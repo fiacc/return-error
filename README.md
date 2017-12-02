@@ -1,4 +1,4 @@
-# return-error
+# "'return' outside of function"
 
 Adding 
 ```js
