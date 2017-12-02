@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "license": "NO LIC",
+  "main": "index.js",
+  "scripts": {
+    "pass": "lab test.js",
+    "fail": "lab -c test.js"
+  },
+  "name": "lab-return-test",
+  "dependencies": {
+    "code": "^5.1.2",
+    "lab": "^15.1.2"
+  }
+}
