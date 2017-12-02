@@ -1,17 +1,5 @@
 # "'return' outside of function"
 
-Adding 
-```js
- ecmaFeatures: {
-
-        // enable return in global scope
-        globalReturn: true
-    }
-
-```
-to (https://github.com/hapijs/lab/blob/master/lib/coverage.js#L255) gets rid of the error
-
-
 ## Pass
 lab test.js
 ```
@@ -50,3 +38,19 @@ at runCallback (timers.js:789:20)
 at tryOnImmediate (timers.js:751:5)
 at processImmediate [as _immediateCallback] (timers.js:722:5)
 ```
+
+## Fix
+
+
+Adding 
+```js
+ ecmaFeatures: {
+
+        // enable return in global scope
+        globalReturn: true
+    }
+
+```
+to (https://github.com/hapijs/lab/blob/master/lib/coverage.js#L255) gets rid of the error
+
+
